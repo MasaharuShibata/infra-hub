@@ -1,6 +1,9 @@
 name: Claude Task
 description: Claude Code に自動処理させるタスクを作成します
-labels: ["claude-task"]
+title: "[Claude] "
+labels:
+  - claude-task
+
 body:
   - type: textarea
     id: instructions
@@ -25,8 +28,6 @@ body:
         - /src
         - /infra
         - /docs
-    validations:
-      required: false
 
   - type: textarea
     id: notes
@@ -37,5 +38,3 @@ body:
         例：
         - 既存コードは壊さないでください
         - 新しいブランチを作成して作業してください
-    validations:
-      required: false
