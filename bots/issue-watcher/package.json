@@ -1,0 +1,15 @@
+{
+  "name": "issue-watcher",
+  "version": "1.0.0",
+  "description": "Polls GitHub Issues and dispatches labeled issues to Claude Code, which implements the requested change and opens a PR.",
+  "type": "module",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
