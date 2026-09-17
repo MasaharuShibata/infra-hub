@@ -1,0 +1,41 @@
+name: Claude Task
+description: Claude Code に自動処理させるタスクを作成します
+labels: ["claude-task"]
+body:
+  - type: textarea
+    id: instructions
+    attributes:
+      label: 実行してほしい内容
+      description: Claude Code にやってほしい作業内容を具体的に書いてください。
+      placeholder: |
+        例：
+        - Next.js プロジェクトを作成してトップページに「生け花教室の公式サイトです」と表示する
+        - AWS Lambda の API を作成する
+        - infra-hub に test.txt を作成し「これはテストです。」と書く
+    validations:
+      required: true
+
+  - type: textarea
+    id: files
+    attributes:
+      label: 変更してよいファイル・ディレクトリ
+      description: Claude Code が編集してよい範囲を指定できます（空欄でもOK）
+      placeholder: |
+        例：
+        - /src
+        - /infra
+        - /docs
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足情報（任意）
+      description: 追加の背景や注意点があれば記入してください。
+      placeholder: |
+        例：
+        - 既存コードは壊さないでください
+        - 新しいブランチを作成して作業してください
+    validations:
+      required: false
