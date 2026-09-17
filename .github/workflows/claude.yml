@@ -21,15 +21,4 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          allowed_tools: |
-            Write
-            CreateFile
-            FS
-            Glob
-            Grep
-            LS
-            Read
-            Bash(git add:*)
-            Bash(git commit:*)
-            Bash(git rm:*)
-            Bash(/home/runner/work/_actions/anthropics/claude-code-action/v1/scripts/git-push.sh:*)
+          additional_permissions: write-all
