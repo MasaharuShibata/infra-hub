@@ -10,11 +10,13 @@ jobs:
   claude:
     if: contains(github.event.comment.body, '@claude')
     runs-on: ubuntu-latest
+
     permissions:
       id-token: write
       contents: write
       pull-requests: write
       issues: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,3 +24,4 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           additional_permissions: write-all
+          show_full_output: true
