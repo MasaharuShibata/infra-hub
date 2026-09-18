@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masaharu Shibata | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <span class="logo">M.Shibata</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">Hello, I'm</p>
+    <h1>Masaharu Shibata</h1>
+    <p class="tagline">ソフトウェアエンジニア / インフラ &amp; 自動化が好きです</p>
+    <div class="hero-actions">
+      <a href="#works" class="btn btn-primary">Works を見る</a>
+      <a href="#contact" class="btn btn-outline">連絡する</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="about-text">
+        普段はインフラ構築や自動化ツールの開発をしています。
+        小さく作って素早く試すことを大切にしながら、日々の業務を楽にする仕組みづくりに取り組んでいます。
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-grid">
+        <li class="skill-card">JavaScript / Node.js</li>
+        <li class="skill-card">HTML / CSS</li>
+        <li class="skill-card">Git / GitHub</li>
+        <li class="skill-card">CI/CD</li>
+        <li class="skill-card">Infrastructure Automation</li>
+        <li class="skill-card">Linux</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="works" class="section">
+    <div class="container">
+      <h2 class="section-title">Works</h2>
+      <div class="works-grid">
+        <article class="work-card">
+          <h3>infra-hub</h3>
+          <p>インフラ管理・自動化のためのリポジトリ。Issue watcher bot などを含む。</p>
+        </article>
+        <article class="work-card">
+          <h3>Portfolio Site</h3>
+          <p>このポートフォリオサイト自体もその一つです。シンプルな静的ページとして構築。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>お気軽にご連絡ください。</p>
+      <div class="contact-links">
+        <a href="https://github.com/masaharushibata" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Masaharu Shibata</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
